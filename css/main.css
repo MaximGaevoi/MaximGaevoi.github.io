@@ -81,7 +81,6 @@ h3 {
 .topori {
     border-radius: 100%;
     display: block;
-
     padding-top: 10%;
 }
 
@@ -199,14 +198,14 @@ ul, ol {
 @media screen and (max-width: 991px) {
     .title {
         width: 100%;
-        display: block;
-        margin: 50px auto 0;
+
     }
 }
 
 @media screen and (max-width: 424px){
     .topori {
-        width: auto;
+        width: 100%;
+        position: relative;
     }
 }
 
@@ -424,7 +423,7 @@ body.mobile-nav-active #mobile-nav {
 
 @media (max-width: 768px){
     #nav-menu-container {
-        display: none;
+        display: block;
         flex-direction: column;
     }
 
@@ -435,13 +434,25 @@ body.mobile-nav-active #mobile-nav {
 }
 @media screen and (max-width:424px){
     .icons__item {
-        width: auto;
-        position: absolute;
+        width: 100%;
+        position: relative;
+
     }
     .icons__item a {
-        width: auto;
-        position: absolute;
-        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:424px){
+    .icons__item {
+        width: 100%;
+        position: center;
+
+    }
+    .icons__item a {
+        width: 100%;
+        position: center;
     }
 }
 .col_white_amrc { color:#FFF;}
@@ -482,6 +493,13 @@ footer p { font-size:13px; color:#010101; padding-bottom:0px; margin-bottom:8px;
 body {
     padding-top: 20px;
 
+}
+img {
+    width: 100%;
+}
+
+header {
+    flex-direction: ju;
 }
 
 .btn-default {
